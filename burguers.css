@@ -1,0 +1,278 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    background-color: black;
+}
+body {
+    margin: auto;
+    width: 960px;
+    height: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+    box-shadow: inset 0px 0px 5px 1px pink;
+}
+header {
+    width: 100%;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 126, 148);
+    box-shadow: 0px 0px 5px 1px white;
+    border-radius: 5px;
+}
+#botonmenu {
+    display: none;
+}
+header label {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: none;
+}
+header label:hover {
+    cursor: pointer;
+}
+header nav {
+    font-family:'Bangers', cursive;
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px 0px;
+    transition: 1s;
+}
+header nav ul li a:hover {
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+    transition: all 1s;
+    color: pink;
+}
+.redes {
+    width: 44px;
+}
+.redes a img:hover {
+    box-shadow: 0px 0px 5px 1px black;
+}
+#imagenprincipal {
+    width: 100%;
+}
+body h2 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-shadow: 3px 2px 10px black;
+    color: pink;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+#burguers {
+    flex-wrap: wrap;
+    display: flex;
+}
+.combo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: flex-start;
+    box-shadow: 0px 0px 1px 1px pink inset;
+}
+.combodescripcion {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.combodescripcion h3 {
+    font-size: 18px;
+}
+.combodescripcion p {
+    font-size: 14px;
+}
+.combodescripcion h4 {
+    font-size: 24px;
+    padding: 10px 0px;
+    color: pink;
+}
+.combodescripcion input {
+    background-color: rgb(245, 80, 108);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.combodescripcion input:hover {
+    background-color: rgba(255, 126, 148, 0.4);
+}
+main #descripcion {
+    width: 480px;
+    margin: 30px;
+    font-size: 16px;
+}
+#descripcion h2 {
+    margin-top: 30px;
+}
+#descripcion p a {
+    text-decoration: none;
+    color: rgb(245, 80, 108);
+}
+main h2 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: rgb(255, 126, 148);
+}
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    color: rgb(245, 80, 108);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0px;
+}
+h1 {
+    margin-bottom: 115px;
+   }
+   @media screen and (max-width: 768px)
+   {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    header nav {
+        margin-bottom: 35px;
+    }
+    #imagenprincipal {
+        width: 100%;
+        background-position: center;
+    }
+    .combo {
+        width: 100%;
+    }
+    .combodescripcion {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+    }
+    .combodescripcion h3 {
+        padding-bottom: 20px;
+    }
+    .combodescripcion h4 {
+        padding: 10px 0px;
+        font-size: 30px;
+    }
+    .combodescripcion input {
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .redes {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   }
+   @media screen and (max-width: 480px)
+   {
+    header {
+        height: 120px;
+        align-items: center;
+    }
+    header label {
+        display: block;
+        margin-bottom: 110px;
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    #imagenmenu {
+        margin-top: 18px;
+    }
+    .redes {
+        margin-right: 5px;
+    }
+    .menu {
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        margin-top: 430px;
+        transition: all 1.5s;
+        text-align: center;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid black;
+        background-color: rgb(245, 80, 108);
+    }
+    header nav ul li:hover {
+        border-right: 1px solid pink;
+    }
+    header nav ul li a {
+        display: block;
+    }
+    header nav ul li a:hover {
+        border-top: none;
+        border-bottom: none;
+    }
+    #botonmenu:checked ~ .menu{
+        margin: 90px 0px -304px 0px;
+    }
+    main #descripcion {
+        width: 90%;
+        margin: 20px;
+        font-size: 12px;
+    }
+    main h2 {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+    .combo {
+        width: 100%;
+    }
+    .combodescripcion {
+        width: 50%;
+        padding: 0px 10px;
+    }
+    .combodescripcion h3 {
+        padding-bottom: 10px;
+    }
+    .combodescripcion h4 {
+        font-size: 24px;
+    }
+    .combodescripcion input {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    footer .h1 {
+        height: 100px;
+    }
+   }

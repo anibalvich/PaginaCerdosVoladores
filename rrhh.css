@@ -1,0 +1,357 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    background-color: black;
+}
+body {
+    margin: auto;
+    width: 960px;
+    height: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+    box-shadow: inset 0px 0px 5px 1px pink;
+}
+header {
+    width: 100%;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 126, 148);
+    box-shadow: 0px 0px 5px 1px white;
+    border-radius: 5px;
+}
+#botonmenu {
+    display: none;
+}
+header label {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: none;
+}
+header label:hover {
+    cursor: pointer;
+}
+header nav {
+    font-family:'Bangers', cursive;
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 10px 0px;
+    transition: 1s;
+}
+header nav ul li a:hover {
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+    transition: all 1s;
+    color: pink;
+}
+.redes {
+    width: 44px;
+}
+.redes a img:hover {
+    box-shadow: 0px 0px 5px 1px black;
+}
+#imagenprincipal {
+    width: 100%;
+}
+body h2 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-shadow: 3px 2px 10px black;
+    color: pink;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+body div h2 {
+    width: 70%;
+    font-size: 18px;
+}
+main #descripcion {
+    width: 480px;
+    margin: 30px;
+    font-size: 16px;
+}
+#descripcion h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: white;
+}
+#descripcion p a {
+    text-decoration: none;
+    color: rgb(245, 80, 108);
+}
+main h2 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: rgb(255, 126, 148);
+}
+#usuario {
+    width: 49%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#experiencia {
+    width: 49%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+h5 {
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+}
+input[type="checkbox" i]{
+    cursor: pointer;
+    width: 16px;
+}
+.inputs {
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.text {
+    width: 80%;
+    font-size: 16px;
+}
+.inputs input {
+    margin: 1px 0px;
+    height: 16px;
+}
+.labels {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.labels label {
+    margin: 1px 0px;
+}
+.number {
+    width: 10%;
+}
+form {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#usuario input {
+    width: 80%;
+    color: rgb(245, 80, 108);
+    font-size: 16px;
+    height: 24px;
+} 
+#usuario .checkbox {
+    width: initial;
+    padding: 0px;
+    margin: 16px 30px 0px 0px;
+}
+#usuario label {
+    width: 100%;
+    color: pink;
+    font-size: 14px;
+    margin-top: 20px;
+}
+#experiencia label {
+    width: 100%;
+    color: pink;
+    font-size: 14px;
+}
+#usuario .sexo {
+    width: initial;
+    margin-right: 30px;
+}
+#enviar {
+    width: 30%;
+    background-color: pink;
+    border: solid rgb(245, 80, 108);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+#enviar:hover {
+    background-color: rgb(255, 126, 148);
+    color: white;
+    border: solid white;
+}
+h6 {
+    padding-right: 30px;
+}
+hr {
+    width: 90%;
+    margin-left: 20px;
+}
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    color: rgb(245, 80, 108);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px 0px;
+}
+h1 {
+    margin-bottom: 115px;
+   }
+   @media screen and (max-width: 768px)
+   {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    header nav {
+        margin-bottom: 35px;
+    }
+    #imagenprincipal {
+        width: 100%;
+        background-position: center;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .redes {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   }
+   @media screen and (max-width: 480px)
+   {
+    header {
+        height: 120px;
+        align-items: center;
+    }
+    header label {
+        display: block;
+        margin-bottom: 110px;
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    #imagenmenu {
+        margin-top: 18px;
+    }
+    .redes {
+        margin-right: 5px;
+    }
+    .menu {
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        margin-top: 430px;
+        transition: all 1.5s;
+        text-align: center;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid black;
+        background-color: rgb(245, 80, 108);
+    }
+    header nav ul li:hover {
+        border-right: 1px solid pink;
+    }
+    header nav ul li a {
+        display: block;
+    }
+    header nav ul li a:hover {
+        border-top: none;
+        border-bottom: none;
+    }
+    #botonmenu:checked ~ .menu{
+        margin: 90px 0px -304px 0px;
+    }
+    main #descripcion {
+        width: 90%;
+        margin: 20px;
+        font-size: 12px;
+    }
+    body div h2 {
+        font-size: 16px;
+    }
+    #descripcion h2 {
+        font-size: 20px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form input {
+        padding: 5px 0px;
+        margin: 10px 0px;
+        color: rgb(245, 80, 108);
+        font-size: 16px;
+    } 
+    form textarea {
+        margin: 10px 0px;
+    }
+    form select {
+        padding: 5px 0px;
+        margin: 10px 0px;
+    }
+    form label {
+        color: pink;
+    }
+    #usuario {
+        width: 100%;
+    }
+    #experiencia {
+        width: 100%;
+    }
+    .labels {
+        width: 85%;
+    }
+    .labels label {
+        height: 16px;
+    }
+    .number {
+        width: 10%;
+    }
+    form #enviar {
+        background-color: pink;
+        border: solid rgb(245, 80, 108);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    form #enviar:hover {
+        background-color: rgb(255, 126, 148);
+        color: white;
+        border: solid white;
+    }
+    footer .h1 {
+        height: 100px;
+    }
+   }
