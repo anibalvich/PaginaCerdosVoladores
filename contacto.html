@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=no, maximun-scale=1.0, minimun-scale= 1.0">
+    <title>Cerdos Voladores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="botonmenu">
+        <label for="botonmenu"><img src="imagenes/iconomenunegro_Mesa de trabajo 1.svg" id="imagenmenu" alt="icono" width="40px"></label>
+        <div id="logo">
+            <a href="inicio.html"><img src="imagenes/Logo_Mesa de trabajo 1.svg" width="200px" alt="Cerdos Voladores"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="burguers.html">BURGUERS</a></li>
+                <li><a href="entradas.html">ENTRADAS</a></li>
+                <li><a href="cervezas.html">CERVEZAS</a></li>
+                <li><a href="rrhh.html">RR.HH.</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="redes">
+            <a href="https://www.facebook.com/cerdosvoladoresok/"><img src="imagenes/facebook.svg" width="40px" alt="Facebook">
+            <a href="https://www.instagram.com/cerdosvoladoresok/"><img src="imagenes/instagram.svg" alt="Instagram" width="40px"></a>
+        </div>
+    </header>
+    <div>
+        <img src="imagenes/fondocontacto.jpg" alt="contacto" id="imagenprincipal">
+        <h2>Sus comentarios son muy valiosos para nosotros, ya sea para mejorar o para continuar
+            brindándole un servicio acorde al que <b>nuestros clientes se merecen.</b></h2>
+    </div>
+    <main>
+        <div id="descripcion">
+            <h2>Datos del Usuario</h2>
+        </div>
+        <div id="formulario">
+            <form action="get">
+               <label for=""> NOMBRE Y APELLIDO:* </label> <br> <input type="text" name="nombre" required>
+               <label for=""> TELEFONO:* </label> <br> <input type="tel" name="telefono" required>
+               <label for=""> E-MAIL:* </label> <br> <input type="email" name="email" required>
+               <label for=""> SUCURSAL: </label> <br> <select name="sucursales">
+                   <option> </option><option> San Fernando </option><option> San Isidro </option><option> Tigre </option>
+               </select>
+               <label for=""> COMENTARIOS </label> <br> <textarea name="comentarios" cols="30" rows="10"></textarea>
+               <h4> * Campo Obligatorio. </h4>
+            <input type="reset" id="borrar" value="BORRAR TODO"><input type="submit" id="enviar" value="ENVIAR">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="h1"><h1>CERDOS <br> VOLADORES</h1></div>
+        <div id="datos">
+            <b>Tel.:</b> <br>
+            011 15-2889-4480 <br><br>
+            
+            <b>Horario de atención:</b> <br>
+            De 18:00hrs a 00:00hrs.<br><br>
+            
+            <b>Dirección:</b> <br>
+            Av. Del Libertador 82<br>
+            CP. 1646<br>
+            San Fernando, Buenos Aires.
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/cerdosvoladoresok/"><img src="imagenes/facebook.svg" width="40px" alt="Facebook">
+                <a href="https://www.instagram.com/cerdosvoladoresok/"><img src="imagenes/instagram.svg" width="40px" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
